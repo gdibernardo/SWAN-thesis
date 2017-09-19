@@ -21,14 +21,23 @@
 \usepackage{epigraph}
 \usepackage{csquotes}
 
+\usepackage{hyperref}
+
+\usepackage{makecell}
+\usepackage{tabularx}
+%\usepackage{booktabs}
+% \usepackage{graphicx}
+
+\usepackage{tabulary}
+\usepackage{epsf} 
 
 \usepackage{breqn}
 
 \usepackage[backend=biber]{biblatex}
 \addbibresource{references.bib}
 
-%\usepackage{array}
-%\usepackage{tabu}
+\usepackage{array}
+\usepackage{tabu}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -55,8 +64,6 @@
 \linespread{1.3}  
 \begin{document}
 
-
-
 \begin{titlepage}               
 
 \thispagestyle{empty}                  
@@ -67,7 +74,8 @@
 %Questa \`e la \textsc{Dedica}:\\
 %ognuno pu\`o scrivere quello che vuole, \\
 %anche nulla \ldots     
-INTA 'NA SAMANA NASCE 'NU ZITEDU E DICE: CIAO PAPA!
+%INTA 'NA SAMANA NASCE 'NU ZITEDU E DICE: CIAO PAPA!
+-
 \newpage                            
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \end{titlepage}
@@ -114,6 +122,10 @@ INDICE}}
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \include{related_work}
 \clearpage{\pagestyle{empty}\cleardoublepage}
+\include{stream_processing_frameworks}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\include{design_and_implementation}
+\clearpage{\pagestyle{empty}\cleardoublepage}
 %\include{Architettura}
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 %\include{TED}
@@ -152,6 +164,6 @@ INDICE}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%non numera l'ultima pagina sinistra
 \printbibliography 
 \clearpage{\pagestyle{empty}\cleardoublepage}
-\chapter*{Acks} 
+\chapter*{Acknowledgement}
 Grazie.
 \end{document}

@@ -1,27 +1,40 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[41] biber-darwin:303> INFO - === Mon Sep  4, 2017, 13:35:34
-[61] Biber.pm:359> INFO - Reading 'main.bcf'
-[146] Biber.pm:835> INFO - Found 28 citekeys in bib section 0
-[157] Biber.pm:3670> INFO - Processing section 0
-[169] Biber.pm:3840> INFO - Looking for bibtex format file 'references.bib' for section 0
-[171] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[177] bibtex.pm:1292> INFO - Found BibTeX data source 'references.bib'
-[184] Utils.pm:164> WARN - month field 'November' in entry 'swansong' is not an integer - this will probably not sort properly.
-[185] Utils.pm:164> WARN - month field 'December' in entry 'googlemapreduce' is not an integer - this will probably not sort properly.
-[187] Utils.pm:164> WARN - month field 'October' in entry 'googlefilesystem' is not an integer - this will probably not sort properly.
-[188] Utils.pm:164> WARN - month field 'May' in entry 'hadoophdfs' is not an integer - this will probably not sort properly.
-[190] Utils.pm:164> WARN - month field 'October' in entry 'yarn' is not an integer - this will probably not sort properly.
-[193] Utils.pm:164> WARN - month field 'September' in entry 'fastdataarchitecture' is not an integer - this will probably not sort properly.
-[194] Utils.pm:164> WARN - month field 'July' in entry 'streamingbigdataprocessinginclouds' is not an integer - this will probably not sort properly.
-[196] Utils.pm:164> WARN - month field 'October' in entry 'dynamo' is not an integer - this will probably not sort properly.
-[198] Utils.pm:164> WARN - month field 'July' in entry 'bigdataatlinkedin' is not an integer - this will probably not sort properly.
-[200] Utils.pm:164> WARN - month field 'June' in entry 'apachespark' is not an integer - this will probably not sort properly.
-[201] Utils.pm:164> WARN - month field 'April' in entry 'apachesparkrdd' is not an integer - this will probably not sort properly.
-[227] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[227] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[227] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[228] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[246] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[249] bbl.pm:712> INFO - Output to main.bbl
-[249] Biber.pm:109> INFO - WARNINGS: 11
+[46] biber-darwin:303> INFO - === Tue Sep 19, 2017, 05:06:27
+[71] Biber.pm:359> INFO - Reading 'main.bcf'
+[161] Biber.pm:835> INFO - Found 61 citekeys in bib section 0
+[174] Biber.pm:3670> INFO - Processing section 0
+[188] Biber.pm:3840> INFO - Looking for bibtex format file 'references.bib' for section 0
+[192] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[199] bibtex.pm:1292> INFO - Found BibTeX data source 'references.bib'
+[209] Utils.pm:164> WARN - month field 'November' in entry 'swansong' is not an integer - this will probably not sort properly.
+[211] Utils.pm:164> WARN - month field 'December' in entry 'googlemapreduce' is not an integer - this will probably not sort properly.
+[212] Utils.pm:164> WARN - month field 'October' in entry 'googlefilesystem' is not an integer - this will probably not sort properly.
+[214] Utils.pm:164> WARN - month field 'May' in entry 'hadoophdfs' is not an integer - this will probably not sort properly.
+[216] Utils.pm:164> WARN - month field 'October' in entry 'yarn' is not an integer - this will probably not sort properly.
+[219] Utils.pm:164> WARN - month field 'September' in entry 'fastdataarchitecture' is not an integer - this will probably not sort properly.
+[220] Utils.pm:164> WARN - month field 'July' in entry 'streamingbigdataprocessinginclouds' is not an integer - this will probably not sort properly.
+[222] Utils.pm:164> WARN - month field 'October' in entry 'dynamo' is not an integer - this will probably not sort properly.
+[224] Utils.pm:164> WARN - month field 'July' in entry 'bigdataatlinkedin' is not an integer - this will probably not sort properly.
+[226] Utils.pm:164> WARN - month field 'June' in entry 'apachespark' is not an integer - this will probably not sort properly.
+[227] Utils.pm:164> WARN - month field 'April' in entry 'apachesparkrdd' is not an integer - this will probably not sort properly.
+[228] Utils.pm:164> WARN - month field 'October' in entry 'lambdaarchitecturecosteffective' is not an integer - this will probably not sort properly.
+[229] Utils.pm:164> WARN - month field 'November' in entry 'alljoynlambda' is not an integer - this will probably not sort properly.
+[235] Utils.pm:164> WARN - month field 'December' in entry 'streamprocessingcomparison' is not an integer - this will probably not sort properly.
+[236] Utils.pm:164> WARN - month field 'December' in entry 'streaming@twitter' is not an integer - this will probably not sort properly.
+[238] Utils.pm:164> WARN - month field 'June' in entry 'heron' is not an integer - this will probably not sort properly.
+[240] Utils.pm:164> WARN - month field 'June' in entry 'apachesparkstreaming' is not an integer - this will probably not sort properly.
+[243] Utils.pm:164> WARN - month field 'December' in entry 'apacheflinkstreamandbatch' is not an integer - this will probably not sort properly.
+[246] Utils.pm:164> WARN - month field 'August' in entry 'apacheflinkstatemanagement' is not an integer - this will probably not sort properly.
+[247] Utils.pm:164> WARN - month field 'June' in entry 'actormodelbook' is not an integer - this will probably not sort properly.
+[250] Utils.pm:164> WARN - month field 'April' in entry 'approximateprobabilistic' is not an integer - this will probably not sort properly.
+[251] Utils.pm:164> WARN - month field 'April' in entry 'approximationdatabase' is not an integer - this will probably not sort properly.
+[252] Utils.pm:164> WARN - month field 'February' in entry 'approximationtimeseries' is not an integer - this will probably not sort properly.
+[254] Utils.pm:164> WARN - month field 'July' in entry 'remedianfurtheranalysis' is not an integer - this will probably not sort properly.
+[304] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[304] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[304] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[304] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[346] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[353] bbl.pm:712> INFO - Output to main.bbl
+[353] Biber.pm:109> INFO - WARNINGS: 24
