@@ -1,0 +1,5 @@
+#Active SWAN-Songs	#Fog	#Streams
+0			0	0
+96 			48	689
+192			421	701
+384			3201	702

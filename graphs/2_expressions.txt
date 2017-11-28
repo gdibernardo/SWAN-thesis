@@ -1,0 +1,5 @@
+#Active SWAN-Songs	#Fog	#Streams
+0			0	0
+96			204	712
+192			1794	723
+384			14290	739

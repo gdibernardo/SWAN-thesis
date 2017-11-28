@@ -1,0 +1,5 @@
+#Active SWAN-Songs	#Fog	#Streams
+0			0	0
+96			905	707
+192			7100	718
+384			55032	729

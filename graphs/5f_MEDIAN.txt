@@ -1,0 +1,7 @@
+#Active SWAN-Songs	#Core evaluation	#Streaming-oriented
+0			0			0
+1000			799			798
+2000			875			874
+3000			957			943					
+4000			1037			1015	
+5000			1111			1090

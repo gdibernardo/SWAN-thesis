@@ -1,0 +1,24 @@
+\chapter{Conclusions and Future Work}
+\section{Conclusions}
+We designed and implemented a distributed architecture for the Cowbird framework. The distributed architecture promotes the sensing and evaluation of streams of sensor data in real-time. The architecture is composed by a distributed and scalable sensing layer and by a stream processing platform that is capable of evaluating large loads of SWAN-Song expressions with a low latency. Furthermore, when it is possible, the system combines sensing and evaluation features in the Fog layer avoiding extra communication costs. The architecture is extremely versatile and both its components can easily scale in situations of high input loads.
+\paragraph{}
+We built an experimental application that monitors the level of noise emitted by IoT sound sensors. This application helped us testing the designed architecture and measures its performance in a relatively simple setup. We conclude that the SWAN-Song expressions evaluation can be performed by both the architectural layers depending by the scenario. SWAN-Song characterized by \emph{high-frequency} sensors or expressions that have a long history time window should be offloaded to the Streams layer. 
+
+\section{Future Work}
+As future work, a real-time adaptive heuristic for offloading expression evaluations from the Fog layer to the Streams layer can be developed. This heuristic can be executed by the Remote Evaluation Manager running in the Fog layer with the goal to minimize latency in the SWAN-Song expressions evaluation. This algorithm can also select the most suitable evaluation strategy: \emph{core} or \emph{streaming-oriented}. To this end, the streaming-oriented evaluation implementation could be realized also for the Fog layer.
+\paragraph{}
+The feasibility of adopting the realized architecture in a fog computing scenarios should be investigated as well. In fact, the Fog layer of our hybrid architecture could be deployed on the \emph{edge} while the Streams could be executed in a cloud environment.
+\paragraph{}
+In addition, Cowbird Node internal components can be re-engineered as Akka actors instead of native Java threads. The Akka actor model could be used not only for handling communication between different nodes but also for threads management in the Cowbird Node instance. This approach could reduce synchronization overheads between sensors threads and expressions evaluation mechanisms. In fact, the communication between actors happens through asynchronous exchanged messages. Moreover, Akka maps running actors to a pool of active threads. Hence, resource utilization could be improved when many active sensors threads are allocated.
+\paragraph{}
+As a further improvement, sensed and evaluated data in the cloud could be shared among different SWAN users that require the same type of sensor data. Sharing sensed and derived sensor data would enhance resource utilization avoiding storage and computing workload duplication.
+\paragraph{}
+In order to increase performance and efficiency in the communication between the Fog and the Streams layer, a message binary format could be used instead of JSON.
+\paragraph{}
+Another possible improvement can be extending the SWAN-Song semantics to make it benefit from the capabilities brought by Apache Flink. Apache Flink has a vast ecosystem of libraries such as Complex Event Processing (CEP) \cite{flinkceponline} or machine learning \cite{flinkmlonline}. SWAN-Song can be enriched with these features in order to offer a more rich API to mobile developers that want to use sensors data in their apps. 
+
+
+
+
+
+ 

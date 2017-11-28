@@ -1,0 +1,5 @@
+#Active SWAN-Songs	#Fog	#Streams	#Cowbird
+0			0	0		0
+16			2	671		99
+32			5	672		670
+64			33	675		6685

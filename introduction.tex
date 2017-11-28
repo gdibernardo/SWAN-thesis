@@ -1,0 +1,42 @@
+\chapter{Introduction}
+Modern smartphones are characterized by significant processing power, advanced network capabilities and a variety of different on-board sensing devices such as accelerometer, GPS, gyroscope, ambient light sensors and many others. Mobile applications developers can take advantage of these sensors to build sophisticated applications that affect millions of people lives everyday.
+
+Smartphone sensors create a multitude of opportunities for mobile application developers. Sensed data can be used for building applications such as monitoring the number of steps taken during the day and to remind the user to do physical movement if he/she has been sitting for too long. Sensor-based applications usually collect the data coming from different sensors and use the collected records to provide context-awareness to the end users. However, having many different applications that access the same smartphone sensor can lead to the redundant collection and storage of the same sensor data values. To this extent, the SWAN (Sensing with Android Nodes) framework \cite{swanphd} has been designed. The SWAN framework is a middleware between Android applications and the smartphone sensors. The SWAN framework provides a high-level abstraction to access sensor measurements avoiding data storage duplication. The SWAN framework is characterized by the SWAN-Song language that allows the creation of context expressions based on smartphone sensor data.
+%SWAN is integrated with the SWAN-Song domain specific language. The SWAN-Song language lets the mobile application developer to construct high-level context expressions based on smartphone sensors data. Using the SWAN-Song language allows the developers to focus on the logic of the mobile application instead of writing low-level code for fetching and processing data coming from different sensors.
+
+The emergence of the Internet-of-Things (IoT) brings sensors and actuators to the internet. The IoT adoption and deployment contributes to the dissemination of many small sensors over buildings or cities. The combination of smartphone sensors and IoT sensors can enable many new application scenarios. In particular, the local contexts of the user's smartphone can be extended with more global information coming from the surrounding IoT sensors. Hence, applications such as optimizing the biking route through the quietest streets or indicate the most sunny paths can be created. 
+
+%send 
+IoT sensors and actuators typically report the sensed data to the cloud. Thus, if a smartphone application wants to access IoT data it has to continuously poll a web endpoint to retrieve the fresh data values. This approach can be very \emph{energy inefficient} for a smartphone. Furthermore, IoT sensors can generate large streams of data that hardly can be aggregated, computed and evaluated by a mobile device. To this end, Cowbird \cite{cowbirdarticle} was created. Cowbird is an energy efficient framework that helps developers build applications that combine smartphone sensor data and IoT. In particular, Cowbird offloads the sensing and communication capabilities to the cloud. Cowbird extends the original SWAN framework making it possible for an Android application to create SWAN-Song expressions that evaluate sensor data both on the phone and in the cloud. 
+
+Internet-of-Things sensors generate continuous streams of data. For example, a smart city with 10,000 sensors (e.g., humidity, sound, CO$_{2}$)  transmitting at a rate of one measurement per second will generate 600,000 data points per minute, or 864 million measurements per day. To address such scenarios, many streaming technologies arose. In such streaming applications, the live data is ingested in a \emph{stream processing engine} that evaluates the data records in real-time. Stream processing frameworks rely on scalable and high-performance computing architectures. 
+
+The current Cowbird cloud application is not designed to scale and it can be executed only on a single computing node. In this thesis, we present an extension of the Cowbird cloud framework designed to sense and evaluate large streams of sensor data in real-time. We organize the Cowbird cloud infrastructure into two layers:
+\begin{itemize}
+\item A distributed and scalable sensing layer.
+\item A high-performance streaming evaluation layer implemented over the Apache Flink processing engine.
+\end{itemize}
+For some type of SWAN-Song expressions we keep the evaluation in the sensing layer, close to the data generation. This strategy is adopted to avoid communication overheads between the two layers and thus to increase performance. Since the evaluation is performed by a combination of novel streaming technologies and traditional computing systems, we called our architecture \emph{hybrid}. 
+
+\newpage
+%\paragraph{}
+Our contributions are as follows:
+\begin{itemize}
+\item We present the design and implementation of a distributed architecture for the Cowbird cloud framework. The architecture is composed of a distributed sensing layer and a streaming evaluation layer powered by a streaming engine. 
+
+\item We implement an optimized evaluation strategy for the SWAN-Song expressions that can be used in streaming-oriented applications.
+
+\item We build an experimental application that makes usage of sound sensors. We use this application to test and evaluate our proposed Cowbird cloud architecture. We also describe a benchmark framework we built for evaluating stream processing engines. The framework helped us understanding which streaming engine among all the available platforms is the most suitable for our use case.
+
+\end{itemize}
+
+\paragraph{}
+This thesis is structured as follows: 
+\begin{itemize}
+\item \textbf{Chapter 2} provides background information about the SWAN framework and Cowbird.
+\item	 \textbf{Chapter 3} describes the large-scale architectures that can be used to analyze streams of data in real-time.
+\item \textbf{Chapter 4} gives an overview of the cutting-edge stream processing technologies. In this chapter, we also describe the framework we built for evaluating some of the available stream processing engines.
+\item \textbf{Chapter 5} describes the design and implementation details of the extend Cowbird architecture.
+\item \textbf{Chapter 6} reports the testing methodologies adopted and the evaluation results of the proposed distributed architecture.
+\item \textbf{Chapter 7} reports the related work in streaming architectures applied to the IoT scenarios. 
+\end{itemize}
